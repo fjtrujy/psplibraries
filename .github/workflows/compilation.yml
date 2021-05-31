@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: pspdev/psp-pkgconf:latest
+    container: fjtrujy/psp-pkgconf:latest
     steps:
     - uses: actions/checkout@v2
 
