@@ -46,6 +46,7 @@ git clone --depth 1 -b v1.6.37 https://github.com/glennrp/libpng || { exit 1; }
 git clone --depth 1 -b VER-2-10-4 https://github.com/freetype/freetype || { exit 1; }
 git clone --depth 1 -b 0.2.5 https://github.com/yaml/libyaml || { exit 1; }
 git clone --depth 1 -b 2.1.0 https://github.com/libjpeg-turbo/libjpeg-turbo || { exit 1; }
+git clone --depth 1 -b main https://github.com/pspdev/kubridge || { exit 1; }
 
 ##
 ## Build cmake projects
@@ -55,4 +56,5 @@ build libpng "-DPNG_SHARED=OFF -DPNG_STATIC=ON"
 build freetype
 build libyaml
 build libjpeg-turbo "-DCMAKE_BUILD_TYPE=Release -DENABLE_SHARED=FALSE -DWITH_SIMD=0"
+build kubridge
 cd ..
