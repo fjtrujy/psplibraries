@@ -13,7 +13,7 @@ else
   XTRA_OPTS=(. -G"Unix Makefiles")
 fi
 
-CMAKE_OPTIONS="-Wno-dev -DCMAKE_TOOLCHAIN_FILE=$PSPDEV/PSP/share/pspdev.cmake -DCMAKE_INSTALL_PREFIX=$PSPDEV/psp/sdk/ -DBUILD_SHARED_LIBS=OFF "
+CMAKE_OPTIONS="-Wno-dev -DCMAKE_TOOLCHAIN_FILE=$PSPDEV/psp/share/pspdev.cmake -DCMAKE_INSTALL_PREFIX=$PSPDEV/psp/sdk/ -DBUILD_SHARED_LIBS=OFF "
 #CMAKE_OPTIONS+="-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON "
 
 function build {
@@ -28,8 +28,8 @@ function build {
 }
 
 ## Add ps2dev.cmake
-mkdir -p $PSPDEV/PSP/share/
-cp pspdev.cmake $PSPDEV/PSP/share/ || { exit 1; }
+mkdir -p $PSPDEV/psp/share/
+cp pspdev.cmake $PSPDEV/psp/share/ || { exit 1; }
 
 ##
 ## Remove build folder
