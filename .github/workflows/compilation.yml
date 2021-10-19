@@ -19,4 +19,4 @@ jobs:
 
     - name: Compile Libraries
       run: |
-        ./libraries.sh
+        make

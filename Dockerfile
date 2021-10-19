@@ -7,7 +7,7 @@ COPY . /src
 
 RUN apk add build-base autoconf automake make bash wget cmake git unzip libtool tcl 
 RUN cd /src && \
-    ./libraries.sh
+    make
 
 # Second stage
 FROM alpine:latest
